@@ -19,27 +19,37 @@ try:
     if hour<0 or hour>23:
         print("Please enter a valid hour between 0-23")
         exit()
-    type=type.capitalize()
+    type=type.strip().lower()
+    if type=="economy":
+        type="Economy"
+    elif type=="premium":
+        type="Premium"
+    elif type=="suv":
+        type="SUV"
     if type not in rates:
         print("Service not available for the selected vehicle type")
     else:
         base_fare=rates[type]*km
         total_fare=calculate_fare(km,type,hour)
-        if km>20:
-            print("Long distance discount is applied")
+        discount_applied=False
+        if km>=20:
             total_fare=total_fare*0.9
+            discount_applied=True
+        min_fare=False
         if total_fare<50:
-            print("Minimum fare charges applied: Rs. 50")
             total_fare=50
+            min_fare=True
         print("\n===== RECEIPT =====")
         print("Distance:",km,"km")
         print("Vehicle:",type)
         print("Time:",hour)
         print("Base Fare:",base_fare)
+        if discount_applied:
+            print("--Long distance discount is applied--")
+        if min_fare:
+            print("--Minimum fare charges applied--")
         if hour>=17 and hour<=20:
-            print("Peak Hour Surcharge Applied: YES")
-        else:
-            print("Peak Hour Surcharge Applied: NO")
+            print("--Peak Hour Surcharge Applied--")
         print("Total Fare:",round(total_fare,2))
 except ValueError:
     print("Invalid input, enter a numeric input")

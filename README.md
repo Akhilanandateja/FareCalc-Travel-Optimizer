@@ -31,8 +31,7 @@ Based on these inputs, the system calculates the final fare and displays a forma
 ---
 
 ## 📁 Project Structure
-
-
+![Project Structure](images/project_structure.png)
 ---
 
 ## ▶️ How to Run
@@ -46,17 +45,38 @@ Based on these inputs, the system calculates the final fare and displays a forma
 
 ## 📸 Screenshots
 
-### 🔹 Normal Case
+### 🔹 Normal Case (No Surge)
 ![Normal](images/normal.png)
 
 ### 🔹 Peak Hour Surge
 ![Surge](images/surge.png)
 
-### 🔹 Invalid Input
-![Invalid](images/invalid.png)
+### 🔹 Invalid Vehicle Type
+![Invalid Vehicle](images/invalid_vehicle.png)
+
+### 🔹 Invalid Distance
+![Invalid Distance](images/invalid_distance.png)
+
+### 🔹 Invalid Hour
+![Invalid Hour](images/invalid_hour.png)
+
+### 🔹 Non-Numeric Input
+![Non Numeric](images/non_numeric.png)
+
+### 🔹 Case Insensitive Input
+![Case Insensitive](images/case_insensitive.png)
 
 ### 🔹 Long Distance Discount
 ![Discount](images/discount.png)
+
+### 🔹 Minimum Fare Applied
+![Minimum Fare](images/minimum_fare.png)
+
+### 🔹 Surge + Discount
+![Surge Discount](images/surge_discount.png)
+
+### 🔹 Edge Case (Zero Distance)
+![Zero Distance](images/zero_distance.png)
 
 ---
 
@@ -82,5 +102,3 @@ Based on these inputs, the system calculates the final fare and displays a forma
 ## 👨‍💻 Author
 
 **Akhilanandateja Sanga**
-
-
