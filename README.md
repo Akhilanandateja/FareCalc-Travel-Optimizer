@@ -101,4 +101,4 @@ Based on these inputs, the system calculates the final fare and displays a forma
 
 ## 👨‍💻 Author
 
-**Akhilanandateja Sanga**
+**Akhilananda Teja Sanga**
